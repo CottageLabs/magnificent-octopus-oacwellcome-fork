@@ -12,7 +12,7 @@ class JobsDAO(dao.ESDAO):
         counter = 0
         total = cls.count(q.query())
         for res in cls.iterate(q.query()):
-            obj = cls.pull(res.id)
+            obj = cls.pull(res.id[0])  # TODO this is insane, why is ID a list?
             state = oag.RequestState.from_json(obj.data)
             counter += 1
             yield state, counter, total
