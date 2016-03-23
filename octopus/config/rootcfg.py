@@ -17,6 +17,7 @@ CONFIG_FILES = [
     "magnificent-octopus/octopus/modules/crud/settings.py",
     "magnificent-octopus/octopus/modules/doaj/settings.py",
     "magnificent-octopus/octopus/modules/epmc/settings.py",
+    "magnificent-octopus/octopus/modules/crossref/settings.py",
     "magnificent-octopus/octopus/modules/es/settings.py",
     "magnificent-octopus/octopus/modules/jper/settings.py",
     "magnificent-octopus/octopus/modules/oag/settings.py",
